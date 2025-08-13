@@ -1,0 +1,85 @@
+/* ======================================================================
+   Navigation styles – nav.css
+   Sticky, translucent nav that becomes solid on scroll.
+   ====================================================================== */
+
+/* Theme-aware nav surface */
+html[data-theme="light"] {
+  --nav-surface: rgba(255, 255, 255, 0.75);
+  --nav-border:  rgba(0, 0, 0, 0.08);
+  --nav-text:    #0b0c0e;
+}
+html[data-theme="dark"] {
+  --nav-surface: rgba(11, 12, 14, 0.75);
+  --nav-border:  rgba(255, 255, 255, 0.08);
+  --nav-text:    #e4e4e4;
+}
+
+/* Base navbar */
+.navbar {
+  transition: background-color .25s ease, box-shadow .25s ease, border-color .25s ease, padding .25s ease;
+  backdrop-filter: saturate(160%) blur(10px);
+}
+.navbar.is-transparent {
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
+  box-shadow: none;
+}
+
+/* When scrolled (JS toggles .is-scrolled) */
+.navbar.is-scrolled {
+  background-color: var(--nav-surface);
+  border-bottom: 1px solid var(--nav-border);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+/* Item colors */
+.navbar a.navbar-item,
+.navbar .navbar-link {
+  color: var(--nav-text);
+  transition: color 160ms ease, background-color 160ms ease;
+}
+.navbar a.navbar-item:hover,
+.navbar .navbar-link:hover {
+  color: var(--primary-start);
+  background-color: transparent;
+}
+
+/* Brand spacing tweaks */
+.navbar .navbar-brand .navbar-item {
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+/* Theme toggle button look */
+#theme-toggle.button {
+  border: none;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+}
+#theme-toggle.button:is(:hover, :focus) {
+  filter: brightness(1.05);
+}
+
+/* Burger */
+.navbar-burger {
+  height: 3rem;
+}
+.navbar-burger span {
+  background-color: var(--nav-text);
+}
+
+/* Mobile menu surface */
+.navbar-menu { background-color: transparent; }
+.navbar-menu.is-active {
+  background-color: var(--nav-surface);
+  backdrop-filter: saturate(160%) blur(10px);
+}
+
+/* Compact top padding when fixed */
+.navbar.is-fixed-top {
+  padding-top: .4rem;
+  padding-bottom: .4rem;
+}
+
+/* Keep higher than sections below */
+.navbar { z-index: 30; }

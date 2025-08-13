@@ -1,98 +1,424 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-theme>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Julian Mayola · Data-Driven Developer</title>
+
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" />
+    <!-- Devicon for tech logos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Site-specific styles (order matters) -->
+    <link rel="stylesheet" href="./bulma/body.css">
+    <link rel="stylesheet" href="./bulma/nav.css">
   </head>
   <body>
-    <div class="box ">
+    <!-- ═════════════ NAVBAR ═════════════ -->
+    <nav class="navbar is-spaced is-transparent has-shadow is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item has-text-weight-semibold is-size-5" href="#hero">J.&nbsp;Mayola</a>
 
-  <section class="section">
-    <div class="container">
-      <h1 class="title">
-        Hello World
-      </h1>
-      <p class="subtitle">
-        My first website with <strong>Bulma</strong>!
-      </p>
-    </div>
-  </section>
-  <div class="block">
-    This text is within a <strong>block</strong>.
-  </div>
-  <div class="block">
-    This text is within a <strong>second block</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-  </div>
-  <div class="block">
-    This text is within a <strong>third block</strong>. This block has no margin at the bottom.
-    </div>
-    <form class="box">
-        <div class="field">
-          <label class="label">Email</label>
-          <div class="control">
-            <input class="input" type="email" placeholder="e.g. alex@example.com" />
+          <button id="theme-toggle" class="button is-small is-light is-rounded ml-2" title="Toggle theme">
+            <span class="icon is-small"><i class="fas fa-moon"></i></span>
+          </button>
+
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+            <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="navMenu" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item" href="#hero">Home</a>
+            <a class="navbar-item" href="#about">About</a>
+            <a class="navbar-item" href="#repos">Projects</a>
+            <a class="navbar-item" href="#contact">Contact</a>
           </div>
         </div>
-      
-        <div class="field">
-          <label class="label">Password</label>
-          <div class="control">
-            <input class="input" type="password" placeholder="********" />
-          </div>
+      </div>
+    </nav>
+
+    <!-- ═════════════ HERO ═════════════ -->
+    <section id="hero" class="hero is-fullheight has-background-primary-gradient" style="padding-top:80px;">
+      <div class="hero-body scroll-animate">
+        <div class="container has-text-centered">
+          <figure class="image is-128x128 is-inline-block animate__animated animate__zoomIn">
+            <img class="is-rounded" src="https://github.com/jmayola.png" alt="Avatar" />
+          </figure>
+          <h1 class="title is-1 animate__animated animate__fadeInDown">Hi, I'm Julian Mayola</h1>
+          <p class="subtitle is-4 animate__animated animate__fadeInUp">Data-driven developer building efficient pipelines &amp; tools.</p>
         </div>
-      
-        <button class="button is-primary">Sign in</button>
-      </form>
-      <div class="box">
-        <article class="media">
-          <div class="media-left">
-            <figure class="image is-64x64">
-              <img src="https://bulma.io/assets/images/placeholders/128x128.png" alt="Image" />
+      </div>
+
+    <!-- ═══ HERO → ABOUT DIVIDER : red-accent / dark-blur version ═══ -->
+      <div class="hero-divider hero-divider--alt"> 
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   id="svg1"
+   viewBox="0 0 1440 320"
+  width="100%"
+  height="240"
+  preserveAspectRatio="none"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs1"><linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient20"
+       id="linearGradient21"
+       x1="88.699776"
+       y1="119.97937"
+       x2="92.580574"
+       y2="266.38031"
+       gradientUnits="userSpaceOnUse" /><linearGradient
+       id="linearGradient20"
+       inkscape:collect="always"><stop
+         style="stop-color:#ff0000;stop-opacity:1;"
+         offset="0.47749895"
+         id="stop20" /><stop
+         style="stop-color:#ff0000;stop-opacity:0;"
+         offset="0.98471969"
+         id="stop21" /></linearGradient><linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient18"
+       id="linearGradient19"
+       x1="87.954483"
+       y1="130.39099"
+       x2="89.599396"
+       y2="190.55656"
+       gradientUnits="userSpaceOnUse" /><linearGradient
+       id="linearGradient18"
+       inkscape:collect="always"><stop
+         style="stop-color:#00ff00;stop-opacity:1;"
+         offset="0.24356298"
+         id="stop18" /><stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="0.81160146"
+         id="stop19" /></linearGradient><linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient22"
+       id="linearGradient23"
+       x1="98.512779"
+       y1="174.79729"
+       x2="97.424988"
+       y2="241.4879"
+       gradientUnits="userSpaceOnUse" /><linearGradient
+       id="linearGradient22"
+       inkscape:collect="always"><stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0.15553352"
+         id="stop22" /><stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="0.37954044"
+         id="stop23" /></linearGradient><linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient22"
+       id="linearGradient1"
+       x1="98.512779"
+       y1="174.79729"
+       x2="97.424988"
+       y2="241.4879"
+       gradientUnits="userSpaceOnUse" /><linearGradient
+       id="linearGradient2"
+       inkscape:collect="always"><stop
+         style="stop-color:#fff;stop-opacity:1;"
+         offset="0.15553352"
+         id="stop1" /><stop
+         style="stop-color:#fff;stop-opacity:0;"
+         offset="0.37954044"
+         id="stop2" /></linearGradient><linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient22"
+       id="linearGradient3"
+       gradientUnits="userSpaceOnUse"
+       x1="98.512779"
+       y1="174.79729"
+       x2="97.424988"
+       y2="241.4879" /></defs><sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050" /><inkscape:clipboard
+     min="-298.90256,382.4112"
+     max="1141.0974,701.94588"
+     geom-min="-298.90256,382.4112"
+     geom-max="1141.0974,701.94588" /><g
+     id="layer1"
+     transform="matrix(3.7795276,0,0,3.7795276,298.90256,-382.4112)"><g
+       id="g1"
+       transform="translate(28.600785,-18.79974)"><path
+         d="m -107.68542,119.97937 c 79.375003,16.18834 60.593666,6.93163 195.643189,21.04355 59.564061,-18.80966 146.951721,-12.79704 185.356811,-21.03931 v 55.04858 l -163.14146,-0.24818 -217.85854,0.24818 z"
+         fill="url(#heroWave)"
+         id="path6-3-6"
+         style="fill:url(#linearGradient21);stroke-width:0.292682"
+         sodipodi:nodetypes="csccccc" /><path
+         d="m -107.68542,167.48125 c 79.375003,13.22917 106.80194708,-47.14952 241.85147,-35.6172 28.14192,2.40313 59.42854,8.75256 70.51878,10.64946 l 68.62975,11.73857 v 36.30449 H 134.3952 -107.68542 Z"
+         id="path6-3"
+         style="fill:url(#linearGradient19);stroke-width:0.264583"
+         sodipodi:nodetypes="cssccccc" /></g><g
+       id="layer1-5"
+       transform="translate(28.600785,-18.79974)"
+       style="fill:url(#linearGradient23);fill-opacity:1"><path
+         d="m -107.68542,167.48125 c 79.375003,13.22917 161.203474,-28.60107 241.85147,-21.65085 114.59,9.87534 139.14853,8.42168 139.14853,8.42168 v 50.27084 h -381 z"
+         fill="url(#heroWave)"
+         id="path6"
+         style="fill:url(#linearGradient3);fill-opacity:1;stroke-width:0.264583"
+         sodipodi:nodetypes="cscccc" /></g></g></svg>
+
+
+
+      </div>
+    </section>
+
+    
+
+    <!-- ═════════════ ABOUT ═════════════ -->
+    <section id="about" class="section scroll-animate">
+      <div class="container">
+        <h2 class="title is-3 has-text-centered animate__animated animate__fadeInUp">About&nbsp;Me</h2>
+
+        <div class="columns is-variable is-8 is-vcentered">
+          <!-- profile photo / fun shot -->
+          <div class="column is-5">
+            <figure class="image is-4by5 animate__animated animate__zoomIn">
+              <img class="is-rounded" src="https://avatars.githubusercontent.com/u/853970?v=4" alt="Julian typing code under moody lighting" />
             </figure>
           </div>
-          <div class="media-content">
-            <div class="content">
+
+          <!-- bio & skill pills -->
+          <div class="column">
+            <div class="content is-medium animate__animated animate__fadeInUp">
               <p>
-                <strong>John Smith</strong> <small>@johnsmith</small>
-                <small>31m</small>
-                <br />
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                efficitur sit amet massa fringilla egestas. Nullam condimentum luctus
-                turpis.
+                I’m <strong>Julian Mayola</strong>, a data-driven developer from Argentina who loves turning messy, real-world data into crisp digital experiences &amp; automations. I build <em>end-to-end pipelines</em> — from headless scraping with Playwright and Scrapy, to cloud ETL jobs, to interactive dashboards.
+              </p>
+              <p>
+                When I’m not coding you’ll find me <em>roasting specialty coffee</em> ☕ or reverse-engineering vintage arcade ROMs.
               </p>
             </div>
-            <nav class="level is-mobile">
-              <div class="level-left">
-                <a class="level-item" aria-label="reply">
-                  <span class="icon is-small">
-                    <i class="fas fa-reply" aria-hidden="true"></i>
-                  </span>
-                </a>
-                <a class="level-item" aria-label="retweet">
-                  <span class="icon is-small">
-                    <i class="fas fa-retweet" aria-hidden="true"></i>
-                  </span>
-                </a>
-                <a class="level-item" aria-label="like">
-                  <span class="icon is-small">
-                    <i class="fas fa-heart" aria-hidden="true"></i>
-                  </span>
-                </a>
-              </div>
-            </nav>
-          </div>
-        </article>
-      </div>
-      <div class="block">
-        <span class="bulma-loader-mixin">asda</span>
-        <span class="bulma-fa-mixin">
-            <i class="fas fa-thumbs-up"></i>
-          </span>
-      </div>
-      
-    </div>
-  </body>
 
+            <!-- skill icons grid -->
+            <div class="columns is-mobile is-multiline has-text-centered animate__animated animate__fadeInUp animate__delay-1s">
+              <div class="column is-one-quarter">
+                <span class="icon is-large"><i class="devicon-python-plain colored fa-2x"></i></span>
+                <p class="is-size-7 mt-2">Python</p>
+              </div>
+              <div class="column is-one-quarter">
+                <span class="icon is-large"><i class="devicon-django-plain colored fa-2x"></i></span>
+                <p class="is-size-7 mt-2">Django</p>
+              </div>
+              <div class="column is-one-quarter">
+                <span class="icon is-large"><i class="devicon-react-plain colored fa-2x"></i></span>
+                <p class="is-size-7 mt-2">React</p>
+              </div>
+              <div class="column is-one-quarter">
+                <span class="icon is-large"><i class="devicon-docker-plain colored fa-2x"></i></span>
+                <p class="is-size-7 mt-2">Docker</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═════════════ REPOS ═════════════ -->
+    <section id="repos" class="section scroll-animate">
+      <div class="container">
+        <h2 class="title is-3 has-text-centered animate__animated animate__fadeInUp">Featured Repositories</h2>
+        <div id="repos-loading" class="columns is-multiline animate__animated animate__fadeInUp animate__delay-1s"></div>
+        <div id="repo-grid" class="columns is-multiline is-hidden"></div>
+      </div>
+    </section>
+
+    <!-- ═════════════ CONTACT (natural layout) ═════════════ -->
+    <section id="contact" class="section has-background-primary-gradient scroll-animate">
+      <div class="container">
+        <div class="columns is-variable is-8 is-vcentered">
+          <!-- intro copy -->
+          <div class="column is-5">
+            <h2 class="title is-2 has-text-weight-bold mb-3">Let’s Build Something Great</h2>
+            <p class="subtitle is-5">
+              Whether you’ve got a question, a project idea, or just want to say hi,
+              feel free to drop a message. I’ll get back to you within a day.
+            </p>
+          </div>
+
+          <!-- form -->
+          <div class="column">
+            <form action="https://formspree.io/f/yourID" method="POST" class="contact-form">
+              <div class="field">
+                <label class="label has-text-weight-medium">Name</label>
+                <div class="control has-icons-left">
+                  <input class="input" type="text" name="name" placeholder="Your name" required>
+                  <span class="icon is-left"><i class="fas fa-user"></i></span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label has-text-weight-medium">Email</label>
+                <div class="control has-icons-left">
+                  <input class="input" type="email" name="_replyto" placeholder="you@example.com" required>
+                  <span class="icon is-left"><i class="fas fa-envelope"></i></span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label has-text-weight-medium">Message</label>
+                <div class="control">
+                  <textarea class="textarea" name="message" rows="4" placeholder="How can I help?" required></textarea>
+                </div>
+              </div>
+
+              <div class="field mt-5">
+                <button class="button is-primary is-medium">
+                  <span class="icon"><i class="fas fa-paper-plane"></i></span>
+                  <span>Send</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div><!-- /.columns -->
+      </div><!-- /.container -->
+    </section>
+
+    <!-- ═════════════ FOOTER (enhanced) ═════════════ -->
+    <footer class="footer footer--accent">
+      <div class="container">
+        <div class="columns is-vcentered is-variable is-5">
+          <!-- social / links -->
+          <div class="column is-narrow">
+            <div class="level is-mobile">
+              <a class="level-item icon is-medium social-link" href="https://github.com/jmayola" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="fab fa-github fa-lg"></i>
+              </a>
+              <a class="level-item icon is-medium social-link" href="https://www.linkedin.com/in/jmayola" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <i class="fab fa-linkedin fa-lg"></i>
+              </a>
+              <a class="level-item icon is-medium social-link" href="mailto:mayola@mayola.net.ar" aria-label="Email">
+                <i class="fas fa-envelope fa-lg"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- copyright -->
+          <div class="column has-text-centered-touch has-text-right-desktop">
+            <p class="is-size-6 mb-0">
+              © <span id="year"></span> Julian Mayola. All&nbsp;rights&nbsp;reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ═════════════ SCRIPTS ═════════════ -->
+    <script>
+    (() => {
+      /* ── Burger toggle ── */
+      const burger = document.querySelector('.navbar-burger');
+      if (burger) {
+        const menu = document.getElementById(burger.dataset.target);
+        burger.addEventListener('click', () => {
+          burger.classList.toggle('is-active');
+          menu?.classList.toggle('is-active');
+        });
+      }
+
+      /* ── Shrink/solid navbar on scroll ── */
+      const nav = document.querySelector('.navbar');
+      const onScroll = () => nav?.classList.toggle('is-scrolled', window.scrollY > 60);
+      onScroll();
+      window.addEventListener('scroll', onScroll, { passive: true });
+
+      /* ── Theme toggle ── */
+      const root = document.documentElement;
+      const btn  = document.getElementById('theme-toggle');
+      const icon = btn?.querySelector('i');
+      const applyTheme = t => {
+        root.setAttribute('data-theme', t);
+        localStorage.setItem('theme', t);
+        if (icon) icon.className = t === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+      };
+      const stored  = localStorage.getItem('theme');
+      const initial = stored || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      applyTheme(initial);
+      btn?.addEventListener('click', () => applyTheme(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'));
+
+      /* ── Intersection fade-ins ── */
+      const els = document.querySelectorAll('.scroll-animate');
+      if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver(entries => {
+          entries.forEach(e => {
+            if (e.isIntersecting) {
+              e.target.classList.add('animate__animated','animate__fadeInUp');
+              io.unobserve(e.target);
+            }
+          });
+        }, { threshold: 0.2 });
+        els.forEach(el => io.observe(el));
+      } else {
+        els.forEach(el => el.classList.add('animate__animated','animate__fadeInUp'));
+      }
+
+      /* ── Footer year ── */
+      const yr = document.getElementById('year');
+      if (yr) yr.textContent = new Date().getFullYear();
+
+      /* ── GitHub Repos (optional; safe to keep if #repos exists) ── */
+      const grid   = document.getElementById('repo-grid');
+      const loader = document.getElementById('repos-loading');
+      function card(r){
+        const col = document.createElement('div');
+        col.className = 'column is-one-third scroll-animate';
+        col.innerHTML = `<div class="box">
+          <article class="media">
+            <div class="media-content">
+              <div class="content">
+                <p><strong><a href="${r.html_url}" target="_blank" rel="noopener">${r.name}</a></strong><br/>${r.description || ''}</p>
+              </div>
+              <nav class="level is-mobile">
+                <div class="level-left">
+                  <span class="level-item tag is-small is-light"><i class="fab fa-github"></i>&nbsp;${r.stargazers_count}</span>
+                </div>
+              </nav>
+            </div>
+          </article>
+        </div>`;
+        return col;
+      }
+      async function loadRepos(){
+        if (!grid || !loader) return;
+        for (let i=0;i<6;i++){
+          const col=document.createElement('div');
+          col.className='column is-one-third';
+          col.innerHTML='<div class="box skeleton"></div>';
+          loader.appendChild(col);
+        }
+        try {
+          const res = await fetch('https://api.github.com/users/jmayola/repos?sort=pushed&per_page=6');
+          const data = await res.json();
+          loader.remove();
+          data.forEach(r => grid.appendChild(card(r)));
+          grid.classList.remove('is-hidden');
+        } catch {
+          loader.innerHTML = '<p>Error loading repos.</p>';
+        }
+      }
+      loadRepos();
+    })();
+    </script>
+  </body>
 </html>
